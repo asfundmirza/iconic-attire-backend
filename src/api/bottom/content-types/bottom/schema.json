@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "bottoms",
+  "info": {
+    "singularName": "bottom",
+    "pluralName": "bottoms",
+    "displayName": "bottom"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "inversedBy": "bottoms"
+    }
+  }
+}
